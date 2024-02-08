@@ -22,5 +22,5 @@ from articles.views import articles_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('articles/', articles_view),
+    path('articles/', articles_view, name="articles_list"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
