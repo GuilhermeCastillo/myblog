@@ -11,3 +11,6 @@ def articles_view(request):
         articles = Article.objects.filter(title__icontains=search)
 
     return render(request, "articles.html", {"articles": articles})
+
+def new_article_view(request):
+    return

@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from articles.views import articles_view
+from articles.views import articles_view, new_article_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('articles/', articles_view, name="articles_list"),
+    path("new_article", new_article_view, name="new_article"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
