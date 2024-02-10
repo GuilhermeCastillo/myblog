@@ -67,15 +67,21 @@
               <a class="nav-link" href="#">Criar Conta</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form
+            method="GET"
+            action="{% url 'articles_list'%}"
+            class="d-flex"
+            role="search"
+          >
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              name="search"
+              placeholder="Pesquisar"
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
-              Search
+              Pesquisar
             </button>
           </form>
         </div>
