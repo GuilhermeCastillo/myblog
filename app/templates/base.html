@@ -17,21 +17,21 @@
       }
 
       .header-content {
-        background: #18122b;
+        background: #7a6448;
         height: 14.6rem;
       }
 
       .intro-blog {
-        background: #346751;
-        color: #ffffff;
+        background: #000000;
+        color: #eff3ef;
         height: 12.4rem;
         border-radius: 0.4rem;
       }
 
-      .nav {
+      {% comment %} .nav {
         background: #000000;
         height: 4rem;
-      }
+      } {% endcomment %}
     </style>
   </head>
 
@@ -59,12 +59,12 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark light">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Criar Conta</a>
+              <a class="nav-link" href="">Criar Conta</a>
             </li>
           </ul>
           <form
@@ -80,7 +80,7 @@
               placeholder="Pesquisar"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-success" type="submit">
               Pesquisar
             </button>
           </form>

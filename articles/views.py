@@ -12,5 +12,7 @@ def articles_view(request):
 
     return render(request, "articles.html", {"articles": articles})
 
+
 def new_article_view(request):
+    print("oii")
     return
