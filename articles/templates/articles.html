@@ -14,6 +14,36 @@
   }
 </style>
 
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/new_article">Criar Conta</a>
+        </li>
+      </ul>
+      <form
+        method="GET"
+        action="{% url 'articles_list'%}"
+        class="d-flex"
+        role="search"
+      >
+        <input
+          class="form-control me-2"
+          type="search"
+          name="search"
+          placeholder="Pesquisar"
+          aria-label="Search"
+        />
+        <button class="btn btn-success" type="submit">
+          Pesquisar
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
 <div class="main-content container-fluid d-flex justify-content-around">
   <div class="empty"></div>
 

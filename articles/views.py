@@ -14,5 +14,5 @@ def articles_view(request):
 
 
 def new_article_view(request):
-    print("oii")
-    return
+    
+    return render(request, "new_article.html")
